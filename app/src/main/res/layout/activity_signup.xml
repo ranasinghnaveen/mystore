@@ -6,45 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".signup"
     android:background="@color/grey">
+
+
     <EditText
-        android:id="@+id/signup_mobile"
+        android:id="@+id/signup_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintWidth_percent=".8"
-        app:layout_constraintHorizontal_bias=".5"
-        app:layout_constraintVertical_bias=".3"
-
         android:background="@drawable/login_bg"
-        android:hint="Mobile Number"
+        android:hint="Email ID"
+
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
         android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358"
+        app:layout_constraintWidth_percent=".8" />
 
-        />
     <EditText
         android:id="@+id/signup_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintWidth_percent=".8"
-        app:layout_constraintHorizontal_bias=".5"
-        app:layout_constraintVertical_bias=".1"
-
-
-        android:hint="Password"
         android:background="@drawable/login_bg"
+        android:hint="Password"
         android:paddingLeft="20dp"
+
+
         android:paddingTop="20dp"
         android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signup_mobile"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email"
 
-        />
+        app:layout_constraintVertical_bias="0.078"
+        app:layout_constraintWidth_percent=".8" />
+
     <EditText
         android:id="@+id/signup_confirm_password"
         android:layout_width="0dp"
@@ -54,7 +53,7 @@
         app:layout_constraintVertical_bias=".1"
 
 
-        android:hint="Password"
+        android:hint="Confirm Password"
         android:background="@drawable/login_bg"
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
@@ -80,5 +79,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signup_confirm_password"
         />
+
+    <Button
+        android:id="@+id/alreadyHaveAccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_bg"
+        android:text="Already have account, Log In"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupbutton2"
+        app:layout_constraintVertical_bias="0.244"
+        app:layout_constraintWidth_percent=".8" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
